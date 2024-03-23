@@ -1,10 +1,7 @@
 package Task_1_Test.Scenario_1_Test;
 
 import com.google.common.io.Files;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -18,9 +15,14 @@ public class Task1_BaseTest {
     @BeforeMethod
     public void setUp(){
         driver=new ChromeDriver();
+        driver.manage().deleteAllCookies();
         driver.get("https://www.amazon.com/");
+        Cookie cookie = new Cookie("session-id", "147-5765903-5960848", ".amazon.com","/", null ,false,false);
+        driver.manage().addCookie(cookie);
+        driver.navigate().refresh();
         Dimension dimension=new Dimension(1024,768);
         driver.manage().window().setSize(dimension);
+
     }
 
     @AfterMethod
