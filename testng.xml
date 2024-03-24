@@ -6,7 +6,7 @@
     </listeners>
 
     <test verbose="2" preserve-order="true" name="E:/testing/java/projects/Vois-Automation-Assesment">
-        <classes><class name="Pages.addToCart_CarAccessories"><methods><include name="carAccessories"/>
+        <classes><class name="Tests.Scenario_1_Test.AddToCart_CarAccessories"><methods><include name="carAccessories"/>
         </methods>
         </class>
         </classes>

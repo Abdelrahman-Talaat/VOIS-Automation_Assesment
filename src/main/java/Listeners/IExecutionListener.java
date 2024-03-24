@@ -13,7 +13,7 @@ public class IExecutionListener implements org.testng.IExecutionListener {
     @Override
     public void onExecutionFinish() {
         try {
-      Runtime.getRuntime().exec("generateAllureReport.bat");
+      Runtime.getRuntime().exec("allure serve target/surefire-reports");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
