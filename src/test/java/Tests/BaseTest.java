@@ -1,4 +1,4 @@
-package Tests.Scenario_1_Test;
+package Tests;
 
 import com.google.common.io.Files;
 import org.openqa.selenium.*;
@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import java.io.File;
 import java.io.IOException;
 
-public class Task1_BaseTest {
+public class BaseTest {
     public WebDriver driver;
     @BeforeMethod
     public void setUp(){
@@ -26,7 +26,7 @@ public class Task1_BaseTest {
     }
 
     @AfterMethod
-    public void recordFailureTest(ITestResult result) {
+    public void tearDown(ITestResult result){
         if (ITestResult.FAILURE == result.getStatus()) {
             var camera = (TakesScreenshot) driver;
             File screenshot = camera.getScreenshotAs(OutputType.FILE);
@@ -37,4 +37,10 @@ public class Task1_BaseTest {
             }
         }
 
-    }}
+        if (driver != null){
+            driver.quit();
+        }
+    }
+
+
+}

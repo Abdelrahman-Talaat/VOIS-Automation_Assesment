@@ -1,4 +1,4 @@
-package Tests.Scenario_1_Test;
+package DataDriven;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

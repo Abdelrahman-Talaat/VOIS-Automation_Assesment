@@ -3,10 +3,10 @@ package Tests.Scenario_2_Test;
 import Pages.AmazonHomePage;
 import Pages.Scenario_2.TargetPage;
 import Pages.Scenario_2.TodaysDealsPage;
-import Tests.Scenario_1_Test.Task1_BaseTest;
+import Tests.BaseTest;
 import org.testng.annotations.Test;
 
-public class TodayDealsTest extends Task1_BaseTest {
+public class TodayDealsTest extends BaseTest {
     AmazonHomePage amazonHomePage;
     TodaysDealsPage todaysDealsPage;
     TargetPage targetPage;

@@ -1,14 +1,16 @@
 package Tests.Scenario_1_Test;
 
+import DataDriven.ReadJson;
 import Pages.AmazonHomePage;
 import Pages.Sceanrio_1.ItemsPage;
 import Pages.Sceanrio_1.AddToCartPage;
 import Pages.Sceanrio_1.CartPage;
+import Tests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-public class AddToCart_CarAccessories extends Task1_BaseTest {
+public class AddToCart_CarAccessories extends BaseTest {
     AmazonHomePage amazonHomePagePage;
     ItemsPage itemsPage;
     AddToCartPage addToCartPage;
