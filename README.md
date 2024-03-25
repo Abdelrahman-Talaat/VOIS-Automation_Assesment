@@ -20,7 +20,7 @@ This project includes automated test scripts for the below VOIS assesment task:
 -	Screenshot in case of faliure.
 
 ## General Notes:
--	Cookies added before the execution of every method to handle capatcha, so kindly Update the cookie before run the test as its is expired sometimes.
--	In scenario2.It is required to go to the fourth page then select any item and add it to the cart, but the cuurent page has 2 pages only not four pages so the test navigate to the second page.
+-	Cookies added before the execution of every method to handle captcha, so kindly Update the cookie before run the test as its is expired sometimes.
+-	In scenario2.It is required to go to the fourth page then select any item and add it to the cart, but the current page has 2 pages only not four pages so the test navigate to the second page.
 -	In scenario2. Test is handled to add products to cart that have the following specifications only (has add to cart button in its page, available to be delivered)
 
