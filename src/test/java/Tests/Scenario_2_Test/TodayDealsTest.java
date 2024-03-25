@@ -10,8 +10,8 @@ public class TodayDealsTest extends BaseTest {
     AmazonHomePage amazonHomePage;
     TodaysDealsPage todaysDealsPage;
     TargetPage targetPage;
-    @Test
-    public void todaysDeals() throws InterruptedException {
+    @Test(description = " GC - testing add to cart functionality from today's deals page")
+    public void todaysDeals()  {
         amazonHomePage =new AmazonHomePage(driver);
         amazonHomePage.dismissChangeAddress();
         todaysDealsPage= amazonHomePage.navigateToTodayDeals();

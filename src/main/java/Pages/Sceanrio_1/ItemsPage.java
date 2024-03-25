@@ -10,7 +10,6 @@ import java.time.Duration;
 
 public class ItemsPage {
     By firstItem=By.xpath("//div[@data-index='3']//h2 ");
-    By addToCartButton=By.cssSelector("#add-to-cart-button");
     By productTitle_1 =By.xpath("//div[@data-index='3']//h2//span");
     WebDriver driver;
 
