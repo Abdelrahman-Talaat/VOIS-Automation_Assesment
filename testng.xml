@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="Listeners.IExecutionListener"/>
+        <listener class-name="Listeners.TestNGListener"/>
     </listeners>
 
     <test verbose="2" preserve-order="true" name="E:/testing/java/projects/Vois-Automation-Assesment">
