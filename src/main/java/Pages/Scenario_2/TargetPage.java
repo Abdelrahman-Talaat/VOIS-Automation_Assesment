@@ -11,7 +11,7 @@ import java.time.Duration;
 public class TargetPage {
     WebDriver driver;
     By selectItem=By.xpath("(//div[@data-testid='deal-card'])[1]/div//a");
-    By addToCartBtn=By.cssSelector("#add-to-cart-button");
+    By addToCartBtn=By.id("dealsx_atc_btn");
 
     public TargetPage (WebDriver driver){
         this.driver=driver;
