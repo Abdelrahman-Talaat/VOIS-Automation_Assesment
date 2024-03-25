@@ -37,9 +37,9 @@ public class BaseTest {
             }
         }
 
-       /* if (driver != null){
+        if (driver != null){
             driver.quit();
-        }*/
+        }
     }
 
 
