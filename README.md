@@ -15,7 +15,7 @@ This project includes automated test scripts for the below VOIS assesment task:
 -	from the discount part choose "10% off or more".
 -	go to the fourth page then select any item and add it to the cart.
 ## Features:
--	Allure Report.
+-	Allure Report generated automatically after finishing test.
 -	DataDriven.
 -	Screenshot in case of faliure.
 
